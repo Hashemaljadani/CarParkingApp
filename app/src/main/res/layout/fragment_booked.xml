@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:fillViewport="true"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Parking spots for Cars"
+            android:textColor="#6E2EB5"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Location Selection -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Please select Location"
+            android:autofillHints="name"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <Spinner
+            android:id="@+id/location_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            />
+
+        <!-- Arrival Time Selection -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="16dp"
+            android:text="Select when you come"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+        <TimePicker
+            android:id="@+id/time_picker"
+            android:layout_width="222dp"
+            android:layout_height="142dp"
+            android:layout_marginTop="16dp"
+            android:timePickerMode="spinner" />
+
+        <!-- Duration Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Duration (hours)"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/hour_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="116dp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Parking Spot Grid -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parking Spots"
+            android:textSize="18sp"
+            android:layout_marginTop="24dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <GridLayout
+            android:layout_width="238dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:rowCount="3">
+
+            <!-- First Parking Spot -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/parking_spot_1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:background="#00FF00" />
+
+                <TextView
+                    android:id="@+id/parking_label_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="C01"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <!-- Second Parking Spot -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/parking_spot_2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:background="#00FF00" />
+
+                <TextView
+                    android:id="@+id/parking_label_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="C02"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <!-- Third Parking Spot -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/parking_spot_3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:background="#00FF00" />
+
+                <TextView
+                    android:id="@+id/parking_label_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="C03"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <!-- Fourth Parking Spot -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/parking_spot_4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:background="#00FF00" />
+
+                <TextView
+                    android:id="@+id/parking_label_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="C04"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <!-- Fifth Parking Spot -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/parking_spot_5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:background="#00FF00" />
+
+                <TextView
+                    android:id="@+id/parking_label_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="VIP-C05"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <!-- Sixth Parking Spot -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/parking_spot_6"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:background="#00FF00" />
+
+                <TextView
+                    android:id="@+id/parking_label_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="VIP-C06"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </GridLayout>
+
+        <!-- Calculated Charges -->
+        <EditText
+            android:id="@+id/charges_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Charges"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="16dp"
+            android:enabled="false"
+            android:focusable="false" />
+
+
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/add_parking_spot_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Parking Spot"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#6E2EB5"
+            android:layout_marginTop="32dp"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</ScrollView>

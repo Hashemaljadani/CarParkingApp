@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Amount Section -->
+    <TextView
+        android:id="@+id/amount_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/amount_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        android:enabled="false"
+    android:focusable="false"
+    android:backgroundTint="@android:color/darker_gray" 
+    />
+
+    <!-- Card Number Section -->
+    <TextView
+        android:id="@+id/card_number_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Card Number"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/card_number_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="1234 5678 9876 5432"
+        android:inputType="number"
+        android:gravity="center" />
+
+    <!-- Expiration Date Section -->
+    <TextView
+        android:id="@+id/expiry_date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expiration Date"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/expiry_date_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="MM/YY"
+        android:inputType="text"
+        android:gravity="center" />
+
+    <!-- CVV Section -->
+    <TextView
+        android:id="@+id/cvv_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CVV"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/cvv_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="123"
+        android:inputType="numberPassword"
+        android:maxLength="3"
+        android:gravity="center" />
+
+    <!-- Payment Button -->
+    <Button
+        android:id="@+id/pay_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay Now"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/ic_launcher_background"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

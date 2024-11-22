@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:background="@drawable/cars"
+        android:gravity="center"
+        android:padding="16dp">
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="900dp"
+        android:layout_gravity="top"
+        android:layout_marginTop="250dp"
+        android:layout_marginBottom="-16dp"
+        android:backgroundTint="#FFFFFF"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Welcome"
+                android:textColor="#6200EE"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="Please login with your information"
+                android:textColor="#808080"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <EditText
+                    android:id="@+id/emailEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:hint="Email Address"
+                    android:background="@drawable/rounded_edit_text"
+                    android:inputType="textEmailAddress" />
+
+                <ImageView
+                    android:id="@+id/emailIcon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:padding="8dp"
+                    android:src="@drawable/baseline_email_24"
+                    android:contentDescription="Email Icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edit_text"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+
+                <ImageView
+                    android:id="@+id/passwordToggle"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:contentDescription="Toggle Password Visibility"
+                    android:padding="8dp"
+                    android:src="@drawable/baseline_visibility_off_24" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/rememberMeCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:paddingRight="200dp"
+                android:text="Remember me"
+                android:textColor="#808080" />
+
+            <!-- زر إرسال بريد التحقق -->
+            <Button
+                android:id="@+id/sendEmailVerificationButton"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="16dp"
+                android:text="Send Verification Email"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#6200EE"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="16dp"
+                android:text="LOGIN"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#6200EE"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/createAccountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Don't have an account? Create one"
+                android:textColor="#6200EE"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

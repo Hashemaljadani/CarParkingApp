@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Privacy Policy Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Privacy Policy Content -->
+
+        <!-- Agreement Checkbox -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Effective Date: August 11, 2024\n\nLast Updated: August 11, 2024\n\nThank you for choosing CarParking. We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our car parking app. Please read this Privacy Policy carefully. If you do not agree with the terms of this Privacy Policy, please do not access the App.\n\n1. Information We Collect\n\nWe may collect information about you in a variety of ways. The information we may collect via the App includes:\n\n1.1 Personal Data\n- Personal Information: Name, email address, phone number, and vehicle details (e.g., license plate number).\n- Location Data: We may request access to your device’s GPS to provide location-based services such as finding nearby parking spaces or navigation.\n\n1.2 Usage Data\n- App Usage: Information about your use of the App, including features accessed, time spent on the app, and interaction data.\n- Device Information: Device type, operating system, unique device identifiers, and mobile network information.\n\n1.3 Payment Data\n- Payment Information: If you make payments through the App, we may collect payment card details, billing address, and transaction details.\n\n2. How We Use Your Information\n\nWe use the information we collect for the following purposes:\n\n- To provide and maintain our services, including managing your account, processing payments, and providing customer support.\n- To improve our App: We may use your information to understand how users interact with the App and make improvements.\n- To communicate with you: We may send you updates, notifications, and other information related to the App.\n- To ensure safety and security: We may use your information to enhance the security of the App, prevent fraud, and protect users.\n\n3. Sharing Your Information\n\nWe may share your information in the following circumstances:\n\n- Service Providers: We may share your information with third-party service providers that assist us in providing services, including payment processing and customer support.\n- Legal Obligations: We may disclose your information if required by law or in response to valid requests by public authorities.\n- Business Transfers: In the event of a merger, acquisition, or sale of assets, your information may be transferred to the new owner.\n\n4. Data Security\n\nWe use administrative, technical, and physical security measures to protect your personal information. However, no method of transmission over the internet or electronic storage is completely secure, so we cannot guarantee absolute security.\n\n5. Your Choices\n\nYou have certain rights regarding your information, including:\n\n- Access and Correction: You can access and update your personal information through the App.\n- Opt-Out: You can opt out of receiving marketing communications by following the unsubscribe instructions provided in the emails or through your account settings.\n- Location Data: You can disable location tracking through your device settings.\n\n6. Third-Party Services\n\nOur App may contain links to third-party websites or services that are not operated by us. We are not responsible for the privacy practices of these third parties, and we encourage you to review their privacy policies.\n\n7. Children’s Privacy\n\nOur App is not intended for use by individuals under the age of 13. We do not knowingly collect personal information from children under 13. If we become aware that we have collected such information, we will take steps to delete it.\n\n8. Changes to This Privacy Policy\n\nWe may update this Privacy Policy from time to time. We will notify you of any changes by updating the Last Updated date of this Privacy Policy. We encourage you to review this Privacy Policy periodically.\n\n9. Contact Us\n\nIf you have any questions about this Privacy Policy, please contact us at: CarParking, [Your Company Address], [Your Email Address], [Your Phone Number]."
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/agreeCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I agree to the Privacy Policy"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/errorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You must agree to the Privacy Policy"
+            android:textColor="#FF0000"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/continueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:enabled="false" />
+
+
+    </LinearLayout>
+
+</ScrollView>

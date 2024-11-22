@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- Main Layout for the Fragment -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <!-- Car Park Logo -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="222dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/logo" />
+
+        <!-- ParkOpen Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ParkOpen"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#6E2EB5"
+            android:layout_marginTop="16dp"
+            android:shadowColor="#FBB13C"
+            android:layout_marginBottom="25dp"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"/>
+
+        <!-- Reserve Parking Text -->
+
+        <TextView
+            android:layout_width="239dp"
+            android:layout_height="123dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="“Reserve your parking\nhassle-free with our\nadvance reservation\nsystem”"
+            android:layout_marginBottom="25dp"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/explore_now_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#6E2EB5"
+            android:paddingLeft="32dp"
+            android:paddingTop="12dp"
+            android:paddingRight="32dp"
+            android:paddingBottom="12dp"
+            android:text="Explore Now"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "402330825709",
+    "project_id": "car-parking-app-d3876",
+    "storage_bucket": "car-parking-app-d3876.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402330825709:android:ed06d1199f18bd88676de4",
+        "android_client_info": {
+          "package_name": "com.forksa.carparking"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH4GLzB57bL0MyxI5wgZzf3DvnrhhPDNA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
